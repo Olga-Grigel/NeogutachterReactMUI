@@ -1,0 +1,43 @@
+.homepage__highlighting {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  margin: 0;
+  color: #393939;
+}
+
+.homepage__highlighting:after {
+  content: attr(title);
+  position: absolute;
+  color: #393939;
+  top: 3px;
+  left: -6px;
+  width: calc(100% + 16px);
+  height: calc(100% - 6px);
+  background-color: rgba(219, 255, 0);
+  z-index: -1;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .homepage__highlighting {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .homepage__highlighting {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .homepage__highlighting {
+    font-size: 30px;
+  }
+}
