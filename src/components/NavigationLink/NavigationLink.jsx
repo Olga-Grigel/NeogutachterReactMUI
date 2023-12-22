@@ -19,8 +19,10 @@ function NavigationLink({ text }) {
           fontSize: {
             lg: '16px',
             md: '13px',
-            sm: '10px',
-            xs: '8px'
+            sm: '11px',
+            xs: '8px',
+            mobileL: '10px',
+
           },
           lineHeight: '28px',
         }}>

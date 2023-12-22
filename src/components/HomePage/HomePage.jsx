@@ -11,15 +11,25 @@ function HomePageHeader() {
         backgroundColor: '#F5F5F5',
         backgroundImage: `URL(${background})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: 'right top',
-        padding: '28px 48px 36px 48px',
+        backgroundPosition: {
+          xs: 'right -663px top -275px',
+          mobileXS: 'right -1277px top -317px',
+        },
       }}
     >
       <HomepageHeader />
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'space-between'
+          flexDirection: {
+            mobileL: 'row',
+            mobileXS: 'column',
+          },
+          justifyContent: 'space-between',
+          mt: {
+            mobileL: '0',
+            mobileXS: '46px',
+          }
         }}
       >
         <BlockWithButton />

@@ -1,36 +1,33 @@
-import './HomepageHeader.css';
-import Navigation from '../Navigation/Navigation.jsx'
-import Link from '@mui/material/Link';
-import imageLogo from '../../images/logo.svg';
+import HeaderDesktop from '../HeaderDesktop/HeaderDesktop'
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import HeaderMobile from '../HeaderMobile/HeaderMobile'
 
 
 export default function HomepageHeader() {
 
   return (
-    <div>
+    <Box
+      sx={{
+        padding: {
+          xs: '28px 48px 0',
+          mobileXS: '16px 16px 0'
+        },
+      }}>
       <AppBar position="static" color='secondary'
         sx={{
           borderRadius: "24px",
           boxShadow: "none",
-          p: "32px 32px 32px 48px",
+          p: {
+            md: "32px 32px 32px 48px",
+            mobileXS: '29px 24px'
+          },
           mb: '28px'
         }}>
-        <Box display="flex"
-          sx={{
-            justifyContent: "space-between",
-          }}>
-          <Link href="#"
-            sx={{
-              textAlign: 'center', verticalAlign: 'medium'
-
-            }}
-          ><img className="header__logo" src={imageLogo} alt="Логотип" /></Link>
-          <Navigation />
-        </Box>
+        <HeaderDesktop />
+        <HeaderMobile />
       </AppBar>
-    </div>
+    </Box>
   );
 }

@@ -3,10 +3,10 @@
   z-index: 1;
   display: inline-block;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 48px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 68px;
+  line-height: 42px;
   margin: 0;
   color: #393939;
 }
@@ -24,20 +24,33 @@
   line-height: 40px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 386px) {
+  .homepage__highlighting {
+    font-size: 31px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .homepage__highlighting {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1075px) {
+  .homepage__highlighting {
+    font-size: 35px;
+    line-height: 68px;
+  }
+}
+
+@media screen and (min-width: 1195px) {
   .homepage__highlighting {
     font-size: 40px;
   }
 }
 
-@media screen and (max-width: 1195px) {
+@media screen and (min-width: 1400px) {
   .homepage__highlighting {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 1075px) {
-  .homepage__highlighting {
-    font-size: 30px;
+    font-size: 48px;
   }
 }

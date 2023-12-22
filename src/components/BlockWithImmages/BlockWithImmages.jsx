@@ -8,94 +8,169 @@ function BlockWithImmages() {
   return (
     <Box
       sx={{
-        position: 'relative',
+        pr: {
+          xs: '28px',
+          mobileL: '16px',
+          mobileXS: '0'
+        },
+        pt: {
+          mobileL: '0',
+          mobileXS: '46px'
+        },
+        overflow: {
+          mobileL: 'visible',
+          mobileXS: 'hidden',
+        },
+        m: '0',
+        width: {
+          mobileL: '50%',
+          mobileXS: '100vw',
+        },
+        height: {
+          mobileL: 'inherit',
+          mobileM: '285px',
+          mobileS: '255px',
+          mobileXS: '228px'
+        },
       }}
     >
       <Box
         sx={{
-          position: 'absolute',
+          m: {
+            mobileL: '0',
+            mobileXS: '0 auto',
+          },
           width: {
-            lg: '202px',
-            md: 'calc(202px * 0.8)',
-            sm: 'calc(202px * 0.7)',
-            xs: 'calc(202px * 0.6)',
+            mobileL: '100%',
+            mobileM: '500px',
+            mobileS: '400px',
+            mobileMS: '330px',
+            mobileXS: '290px',
           },
-          height: {
-            lg: '349px',
-            md: 'calc(349px * 0.8)',
-            sm: 'calc(349px * 0.7)',
-            xs: 'calc(349px * 0.6)',
-          },
-          top: {
-            lg: '2px',
-            md: '18px',
-            sm: '13px',
-            xs: '10px'
-          },
-          right: {
-            lg: '455px',
-            md: '370px',
-            sm: '320px',
-            xs: "270px"
-          },
-          zIndex: '3'
-        }}
-      >
-        <ImmageHeader path={image1} />
-      </Box>
-      <Box
-        sx={{
-          position: 'absolute',
-          width: {
-            lg: '248px',
-            md: 'calc(248px * 0.8)',
-            sm: 'calc(248px * 0.7)',
-            xs: 'calc(248px * 0.6)',
-          },
-          height: {
-            lg: '428px',
-            md: 'calc(428px * 0.8)',
-            sm: 'calc(428px * 0.7)',
-            xs: 'calc(428px * 0.6)',
-          },
-          top: {
-            lg: '152px',
-            md: '140px',
-            sm: '120px',
-            xs: '110px'
-          },
-          right: {
-            lg: '211px',
-            md: '170px',
-            sm: '145px',
-            xs: '125px'
-          },
-          zIndex: '3'
-        }}
-      >
-        <ImmageHeader path={image2} />
-      </Box>
-      <Box
-        sx={{
-          position: 'absolute',
-          width: {
-            lg: '215px',
-            md: 'calc(215px * 0.8)',
-            sm: 'calc(215px * 0.7)',
-            xs: 'calc(215px * 0.6)',
-          },
-          height: {
-            lg: '329px',
-            md: 'calc(329px * 0.8)',
-            sm: 'calc(329px * 0.7)',
-            xs: 'calc(329px * 0.6)',
-          },
-          top: '68px',
-          right: '5px',
-          zIndex: '2'
-        }}
-      >
-        <ImmageHeader path={image3} />
+          height: '100%',
+          position: 'relative'
+        }}>
+        <Box
+          sx={{
+            position: 'absolute',
+            width: {
+              lg: '202px',
+              md: 'calc(202px * 0.8)',
+              xs: 'calc(202px * 0.7)',
+              mobileL: 'calc(202px * 0.6)',
+              mobileM: 'calc(202px * 0.7)',
+              mobileS: 'calc(202px * 0.6)',
+              mobileMS: '106px',
+              mobileXS: 'calc(106px * 0.8)',
+            },
+            height: {
+              lg: '349px',
+              md: 'calc(349px * 0.8)',
+              xs: 'calc(349px * 0.7)',
+              mobileL: 'calc(349px * 0.6)',
+              mobileM: 'calc(349px * 0.7)',
+              mobileS: 'calc(349px * 0.6)',
+              mobileMS: '182px',
+              mobileXS: 'calc(182px * 0.8)',
+            },
+            top: {
+              lg: '2px',
+              md: '18px',
+              mobileM: '13px',
+              mobileXS: '0'
+            },
+            right: {
+              lg: '455px',
+              md: '370px',
+              xs: '320px',
+              mobileL: '270px',
+            },
+            zIndex: '3'
+          }}
+        >
+          <ImmageHeader path={image1} />
+        </Box>
+        <Box
+          sx={{
+            position: 'absolute',
+            width: {
+              lg: '248px',
+              md: 'calc(248px * 0.8)',
+              xs: 'calc(248px * 0.7)',
+              mobileL: 'calc(248px * 0.6)',
+              mobileM: 'calc(248px * 0.7)',
+              mobileS: 'calc(248px * 0.6)',
+              mobileMS: '129px',
+              mobileXS: 'calc(129px * 0.8)',
+            },
+            height: {
+              lg: '428px',
+              md: 'calc(428px * 0.8)',
+              xs: 'calc(428px * 0.7)',
+              mobileL: 'calc(428px * 0.6)',
+              mobileM: 'calc(428px * 0.7)',
+              mobileS: 'calc(428px * 0.6)',
+              mobileMS: '223px',
+              mobileXS: 'calc(223px * 0.8)',
+            },
+            top: {
+              lg: '152px',
+              md: '140px',
+              mobileL: '120px',
+              mobileMS: '77px',
+              mobileXS: '60px'
+            },
+            right: {
+              lg: '211px',
+              md: '170px',
+              xs: '145px',
+              mobileS: '125px',
+              mobileL: '125px',
+              mobileM: '150px',
+              mobileMS: '102px',
+              mobileXS: '80px'
+            },
+            zIndex: '3'
+          }}
+        >
+          <ImmageHeader path={image2} />
+        </Box>
+        <Box
+          sx={{
+            position: 'absolute',
+            width: {
+              lg: '215px',
+              md: 'calc(215px * 0.8)',
+              xs: 'calc(215px * 0.7)',
+              mobileL: 'calc(215px * 0.6)',
+              mobileM: 'calc(215px * 0.7)',
+              mobileS: 'calc(215px * 0.6)',
+              mobileMS: '112px',
+              mobileXS: 'calc(112px * 0.8)',
+            },
+            height: {
+              lg: '329px',
+              md: 'calc(329px * 0.8)',
+              xs: 'calc(329px * 0.7)',
+              mobileL: 'calc(329px * 0.6)',
+              mobileM: 'calc(329px * 0.7)',
+              mobileS: 'calc(329px * 0.6)',
+              mobileMS: '172px',
+              mobileXS: 'calc(172px * 0.8)',
+            },
+            top: {
+              mobileL: '68px',
+              mobileXS: '33px',
+            },
+            right: {
+              mobileS: '5px',
+              mobileXS: '-5px',
+            },
+            zIndex: '2'
+          }}
+        >
+          <ImmageHeader path={image3} />
+        </Box>
       </Box>
     </Box >
   );

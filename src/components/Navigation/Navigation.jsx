@@ -12,8 +12,9 @@ import Box from '@mui/material/Box';
 
 function Navigation() {
   return (
-    <Box display="flex"
+    <Box
       sx={{
+        display: 'flex',
         height: '40px',
         alignItems: 'center'
       }}>

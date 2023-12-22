@@ -13,8 +13,14 @@ function ButtonWithArrow() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                padding: '16px 20px 16px 24px',
-                marginTop: '27px',
+                padding: {
+                    mobileL: '16px 20px 16px 24px',
+                    mobileXS: '12px 20px 12px 24px'
+                },
+                marginTop: {
+                    mobileL: '27px',
+                    mobileXS: '26px'
+                },
                 border: 'none',
                 textTransform: 'none',
                 ml: '-7px'
@@ -26,13 +32,16 @@ function ButtonWithArrow() {
                 fontFamily: 'Inter',
                 fontSize: {
                     lg: '18px',
-                    md: '12px',
-                    sm: '10px',
-                    xs: '8px'
+                    mobileL: '12px',
+                    mobileMS: '16px',
+                    mobileXS: '12px'
                 },
                 fontStyle: 'normal',
                 fontWeight: '700',
-                lineHeight: '30px',
+                lineHeight: {
+                    mobileL: '30px',
+                    mobileXS: '28px'
+                },
                 marginRight: '8px',
                 display: 'inline-block',
             }}>
@@ -44,11 +53,14 @@ function ButtonWithArrow() {
                     color: 'white',
                     width: {
                         lg: '32px',
-                        md: '29px',
-                        sm: '26px',
-                        xs: '23px'
+                        mobileL: '28px',
+                        mobileXS: '24px'
                     },
-                    height: '32px',
+                    height: {
+                        lg: '32px',
+                        mobileL: '28px',
+                        mobileXS: '24px'
+                    },
                     display: 'inline-block',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'contain',

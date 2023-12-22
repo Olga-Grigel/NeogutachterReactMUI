@@ -9,11 +9,16 @@ import reportWebVitals from './reportWebVitals';
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 0,
-      sm: 1075,
-      md: 1195,
-      lg: 1400,
       xl: 1920,
+      lg: 1400,
+      md: 1195,
+      sm: 1075,
+      xs: 950,
+      mobileL: 750,
+      mobileM: 600,
+      mobileS: 450,
+      mobileMS: 386,
+      mobileXS: 0
     },
   },
   palette: {
