@@ -1,7 +1,6 @@
 import './App.css';
 import HomePage from '../HomePage/HomePage.jsx';
-// import Reviews from '../Reviews/Reviews';
-import * as React from 'react';
+import Reviews from '../Reviews/Reviews.jsx';
 // import Button from '@mui/material/Button';
 
 // function App() {
@@ -12,7 +11,7 @@ function App() {
   return (
     <div>
       <HomePage />
-      {/* <Reviews /> */}
+      <Reviews />
     </div>
 
   );

@@ -1,10 +1,10 @@
-import ImmageHeader from '../ImmageHeader/ImmageHeader.jsx';
+import ImageHeader from '../ImageHeader/ImageHeader.jsx';
 import image1 from '../../images/photo1.png';
 import image2 from '../../images/photo2.png';
 import image3 from '../../images/photo3.png';
 import Box from '@mui/material/Box';
 
-function BlockWithImmages() {
+function BlockWithImages() {
   return (
     <Box
       sx={{
@@ -88,7 +88,7 @@ function BlockWithImmages() {
             zIndex: '3'
           }}
         >
-          <ImmageHeader path={image1} />
+          <ImageHeader path={image1} />
         </Box>
         <Box
           sx={{
@@ -133,7 +133,7 @@ function BlockWithImmages() {
             zIndex: '3'
           }}
         >
-          <ImmageHeader path={image2} />
+          <ImageHeader path={image2} />
         </Box>
         <Box
           sx={{
@@ -169,11 +169,11 @@ function BlockWithImmages() {
             zIndex: '2'
           }}
         >
-          <ImmageHeader path={image3} />
+          <ImageHeader path={image3} />
         </Box>
       </Box>
     </Box >
   );
 }
 
-export default BlockWithImmages;
+export default BlockWithImages;

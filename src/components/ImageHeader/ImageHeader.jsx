@@ -1,7 +1,7 @@
-import './ImmageHeader.css';
+import './ImageHeader.css';
 import Box from '@mui/material/Box';
 
-function ImmageHeader({ path }) {
+function ImageHeader({ path }) {
     return (
         <Box
             sx={{
@@ -20,9 +20,9 @@ function ImmageHeader({ path }) {
                 },
             }}
         >
-            <img className="containwithimmage__immage" src={path} alt="immage" />
+            <img className="containwithimage__image" src={path} alt="img" />
         </Box >
     );
 }
 
-export default ImmageHeader;
+export default ImageHeader;

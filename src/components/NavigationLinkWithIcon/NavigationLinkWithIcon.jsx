@@ -16,7 +16,7 @@ function NavigationLinkWithIcon({ text, icon }) {
         alignItems: 'center'
       }}
     >
-      <img className="navigation__icon_before_text" src={icon} alt="immage icon" />
+      <img className="navigation__icon_before_text" src={icon} alt="icon" />
       <NavigationLink text={text} />
     </Link>
   );

@@ -1,8 +1,8 @@
 import HomepageHeader from '../HomepageHeader/HomepageHeader.jsx'
 import BlockWithButton from '../BlockWithButton/BlockWithButton.jsx'
-import BlockWithImmages from '../BlockWithImmages/BlockWithImmages.jsx'
+import BlockWithImages from '../BlockWithImages/BlockWithImages.jsx'
 import Box from '@mui/material/Box';
-import background from "../../images/HomeBackgroundImmage.png";
+import background from "../../images/HomeBackgroundImage.png";
 
 function HomePageHeader() {
   return (
@@ -33,7 +33,7 @@ function HomePageHeader() {
         }}
       >
         <BlockWithButton />
-        <BlockWithImmages />
+        <BlockWithImages />
       </Box >
     </Box >
 

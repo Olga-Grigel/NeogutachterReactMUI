@@ -10,7 +10,7 @@ function NavigationIcon({ icon }) {
         textDecoration: 'inherit'
       }}
     >
-      <img className="navigation__icon" src={icon} alt="immage icon" />
+      <img className="navigation__icon" src={icon} alt="icon" />
     </Link>
   );
 }

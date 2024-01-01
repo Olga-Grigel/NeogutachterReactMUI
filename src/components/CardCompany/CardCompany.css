@@ -1,0 +1,15 @@
+.stars {
+    width: 11.65vw;
+    margin: 12px 0 7px 0;
+}
+
+.namecompany {
+    color: #00B67A;
+}
+
+.star {
+    width: 1.81vw;
+    margin-right: 0.47vw;
+    vertical-align: baseline;
+    height: 3.36vw
+}
