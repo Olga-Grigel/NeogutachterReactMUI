@@ -1,5 +1,6 @@
 import CardCompany from '../CardCompany/CardCompany';
-// import Marquee from 'react-double-marquee';
+import CardTicker from '../CardTicker/CardTicker'
+import Marquee from 'react-double-marquee';
 import Box from '@mui/material/Box';
 
 function Reviews() {
@@ -11,15 +12,16 @@ function Reviews() {
             }}
         >
             <CardCompany />
-            {/* <Box
+            <Box
                 sx={{
                     width: '63.8%',
-                    whiteSpace: 'nowrap'
+                    whiteSpace: 'nowrap',
+                    border: '1px solid red',
                 }}>
                 <Marquee direction="left">
-                    really long textSome really really  ccccccccccccccccreally really really long text
+                    <CardTicker />
                 </Marquee>
-            </Box> */}
+            </Box>
 
         </Box>
     );
