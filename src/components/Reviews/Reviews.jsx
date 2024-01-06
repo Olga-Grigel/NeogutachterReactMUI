@@ -14,13 +14,14 @@ function Reviews() {
             <CardCompany />
             <Box
                 sx={{
-                    width: '63.8%',
+                    // width: '63.8%',
+                    width: '270px',
                     whiteSpace: 'nowrap',
                     border: '1px solid red',
+
                 }}>
-                <Marquee direction="left">
-                    <CardTicker />
-                </Marquee>
+                <Marquee direction="left" children={< CardTicker />} speed="0.03" delay='2000' childMargin='15' scrollWhen="always" />
+
             </Box>
 
         </Box>
