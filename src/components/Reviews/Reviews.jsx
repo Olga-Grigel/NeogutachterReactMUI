@@ -14,8 +14,8 @@ function Reviews() {
             <CardCompany />
             <Box
                 sx={{
-                    // width: '63.8%',
-                    width: '270px',
+                    width: '63.8%',
+                    // width: '270px',
                     whiteSpace: 'nowrap',
                     border: '1px solid red',
 
