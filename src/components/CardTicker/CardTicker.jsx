@@ -8,6 +8,7 @@ function CardTicker() {
     return (
         <Box
             sx={{
+                mr: '1.94vw',
                 width: '28.75vw',
                 p: '1.39vw',
                 boxSizing: 'border-box',

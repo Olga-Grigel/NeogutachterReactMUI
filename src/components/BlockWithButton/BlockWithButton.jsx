@@ -23,14 +23,14 @@ function BlockWithButton() {
           mobileXS: 'auto',
         },
         marginLeft: {
-          lg: '105px',
+          lg: '125px',
           md: '95px',
           sm: '30px',
           xs: '20px',
           mobileXS: '0',
         },
         mt: {
-          lg: '118px',
+          lg: '125px',
           md: '70px',
           sm: '30px',
           mobileL: '80px',

@@ -1,7 +1,6 @@
 import CardCompany from '../CardCompany/CardCompany';
-import CardTicker from '../CardTicker/CardTicker'
-import Marquee from 'react-double-marquee';
 import Box from '@mui/material/Box';
+import MarqueeCard from '../Marquee/Marquee'
 
 function Reviews() {
     return (
@@ -16,13 +15,12 @@ function Reviews() {
                 sx={{
                     width: '63.8%',
                     whiteSpace: 'nowrap',
-                    border: '1px solid red',
-
+                    height: '29.86vw',
+                    alignSelf: 'center'
                 }}>
-                <Marquee direction="left" children={< CardTicker />} speed="0.03" delay='2000' childMargin='15' scrollWhen="always" />
-
+                <MarqueeCard delay={5} />
+                <MarqueeCard delay={1} />
             </Box>
-
         </Box>
     );
 }

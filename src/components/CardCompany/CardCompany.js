@@ -8,17 +8,14 @@ function CardCompany() {
     return (
         <Box sx={{
             width: '36.2%',
-            border: '1px solid red',
         }}>
             <Box sx={{
                 width: '56.4%',
-                mt: '9.5vw',
+                mt: '9.2vw',
                 mr: '18.1%',
                 ml: '25.5%',
-                mb: '8.59vw',
-                border: '1px solid red',
+                mb: '8.36vw',
             }}>
-                {/* 14.4 - кратность vw */}
                 < Typography sx={{
                     display: 'inline-block',
                     fontFamily: 'Lexend Deca',

@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from '../HomePage/HomePage.jsx';
 import Reviews from '../Reviews/Reviews.jsx';
-// import Button from '@mui/material/Button';
+import Example from '../CarouselOurPartners/CarouselOurPartners.jsx'
 
 // function App() {
 //   return <Button variant="contained">Hello world</Button>;
@@ -12,6 +12,7 @@ function App() {
     <div>
       <HomePage />
       <Reviews />
+      {/* <Example /> */}
     </div>
 
   );

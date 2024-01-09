@@ -74,13 +74,13 @@ function BlockWithImages() {
               mobileXS: 'calc(182px * 0.8)',
             },
             top: {
-              lg: '2px',
+              lg: '5px',
               md: '18px',
               mobileM: '13px',
               mobileXS: '0'
             },
             right: {
-              lg: '455px',
+              lg: '477px',
               md: '370px',
               xs: '320px',
               mobileL: '270px',
@@ -114,14 +114,14 @@ function BlockWithImages() {
               mobileXS: 'calc(223px * 0.8)',
             },
             top: {
-              lg: '152px',
+              lg: '155px',
               md: '140px',
               mobileL: '120px',
               mobileMS: '77px',
               mobileXS: '60px'
             },
             right: {
-              lg: '211px',
+              lg: '230px',
               md: '170px',
               xs: '145px',
               mobileS: '125px',
@@ -159,11 +159,11 @@ function BlockWithImages() {
               mobileXS: 'calc(172px * 0.8)',
             },
             top: {
-              mobileL: '68px',
+              mobileL: '70px',
               mobileXS: '33px',
             },
             right: {
-              mobileS: '5px',
+              mobileS: '25px',
               mobileXS: '-5px',
             },
             zIndex: '2'
