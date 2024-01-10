@@ -6,8 +6,7 @@ import logopartner4 from '../../images/logopartner4.svg'
 import LogosPartners from '../LogosPartners/LogosPartners'
 
 
-
-function CarouselLogosPartners(props) {
+function CarouselLogosPartners() {
     var items = [
         {
             img1: logopartner1,
@@ -16,6 +15,7 @@ function CarouselLogosPartners(props) {
             img4: logopartner4,
         },
         {
+
             img1: logopartner4,
             img2: logopartner3,
             img3: logopartner2,
@@ -34,9 +34,8 @@ function CarouselLogosPartners(props) {
             indicatorIconButtonProps={{
                 style: {
                     color: '#E0E0E0',
-                    width: '0.555vw',
-                    height: '0.555vw',
-                    padding: '0.555vw'
+                    width: '1.3vw',
+                    padding: '0.24vw'
                 }
             }}
             activeIndicatorIconButtonProps={{
@@ -46,7 +45,7 @@ function CarouselLogosPartners(props) {
             }}
             indicatorContainerProps={{
                 style: {
-                    marginTop: '50px',
+                    marginTop: '2.9vw',
                 }
 
             }}

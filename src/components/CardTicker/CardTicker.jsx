@@ -1,8 +1,8 @@
 import '../CardTicker/CardTicker.css'
-import Box from '@mui/material/Box';
-import doublequote from '../../images/doublequote.svg';
-import stars5 from '../../images/stars-5.svg';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box'
+import doublequote from '../../images/doublequote.svg'
+import stars5 from '../../images/stars-5.svg'
+import Typography from '@mui/material/Typography'
 
 function CardTicker() {
     return (

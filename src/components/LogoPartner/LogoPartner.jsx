@@ -8,7 +8,6 @@ function LogoPartner({ props }) {
                 display: 'flex',
                 height: '9.72vw',
                 width: '20.83vw',
-                border: '1px solid red',
                 background: '#fff',
                 alignItems: 'center',
                 justifyContent: 'center'

@@ -11,10 +11,8 @@ function LogosPartners(props) {
                 gap: '1.94vw',
                 justifyItems: 'center',
                 alignItems: 'center',
-                border: '1px solid red',
                 alignContent: 'center',
                 justifyContent: 'center',
-                background: '#F5F5F5',
             }}>
             <LogoPartner props={props.item.img1} />
             <LogoPartner props={props.item.img2} />
