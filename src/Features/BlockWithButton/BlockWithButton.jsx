@@ -1,5 +1,5 @@
 import './BlockWithButton.css';
-import ButtonWithArrow from '../ButtonWithArrow/ButtonWithArrow.jsx'
+import ButtonWithArrow from '../../components/ButtonWithArrow/ButtonWithArrow.jsx'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ArrowLong from "../../images/ArrowLong.png";

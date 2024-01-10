@@ -1,4 +1,4 @@
-import ImageHeader from '../ImageHeader/ImageHeader.jsx';
+import ImageHeader from '../../components/ImageHeader/ImageHeader.jsx';
 import image1 from '../../images/photo1.png';
 import image2 from '../../images/photo2.png';
 import image3 from '../../images/photo3.png';

@@ -1,7 +1,7 @@
-import Logo from '../Logo/Logo.jsx'
+import Logo from '../../components/Logo/Logo.jsx'
 import React from 'react';
 import Box from '@mui/material/Box';
-import NavigationIcon from '../NavigationIcon/NavigationIcon.jsx';
+import NavigationIcon from '../../components/NavigationIcon/NavigationIcon.jsx';
 import burgerMemu from '../../images/BurgerMenu.svg';
 import search from '../../images/search.svg';
 

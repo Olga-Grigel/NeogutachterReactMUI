@@ -1,7 +1,7 @@
 import './App.css';
-import HomePage from '../HomePage/HomePage.jsx';
-import Reviews from '../Reviews/Reviews.jsx';
-import Example from '../CarouselOurPartners/CarouselOurPartners.jsx'
+import FirstScreen from '../../Features/FirstScreen/FirstScreen.jsx';
+import Reviews from '../../Features/Reviews/Reviews.jsx';
+import ThirdScreen from '../../Features/ThirdScreen/ThirdScreen.jsx'
 
 // function App() {
 //   return <Button variant="contained">Hello world</Button>;
@@ -10,9 +10,9 @@ import Example from '../CarouselOurPartners/CarouselOurPartners.jsx'
 function App() {
   return (
     <div>
-      <HomePage />
+      <FirstScreen />
       <Reviews />
-      {/* <Example /> */}
+      <ThirdScreen />
     </div>
 
   );

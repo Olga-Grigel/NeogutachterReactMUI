@@ -1,4 +1,4 @@
-import CardTicker from '../CardTicker/CardTicker'
+import CardTicker from '../../components/CardTicker/CardTicker'
 import Marquee from "react-fast-marquee";
 import Box from '@mui/material/Box';
 

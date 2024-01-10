@@ -1,4 +1,4 @@
-import CardCompany from '../CardCompany/CardCompany';
+import CardCompany from '../../components/CardCompany/CardCompany';
 import Box from '@mui/material/Box';
 import MarqueeCard from '../Marquee/Marquee'
 

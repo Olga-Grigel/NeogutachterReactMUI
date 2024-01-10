@@ -1,6 +1,6 @@
 import './NavigationLinkWithIcon.css'
 import * as React from 'react';
-import NavigationLink from '../NavigationLink/NavigationLink'
+import NavigationLink from '../../components/NavigationLink/NavigationLink'
 import Link from '@mui/material/Link';
 
 
