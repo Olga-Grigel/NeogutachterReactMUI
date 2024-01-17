@@ -18,10 +18,10 @@ function Reviews() {
                     height: '29.86vw',
                     alignSelf: 'center'
                 }}>
-                <MarqueeCard delay={5} />
-                <MarqueeCard delay={1} />
+                <Box><MarqueeCard delay={5} /></Box>
+                <Box><MarqueeCard delay={1} /></Box>
             </Box>
-        </Box>
+        </Box >
     );
 }
 

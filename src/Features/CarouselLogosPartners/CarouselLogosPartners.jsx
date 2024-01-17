@@ -7,27 +7,62 @@ import LogosPartners from '../LogosPartners/LogosPartners'
 
 
 function CarouselLogosPartners() {
-    var items = [
-        {
-            img1: logopartner1,
-            img2: logopartner2,
-            img3: logopartner3,
-            img4: logopartner4,
-        },
-        {
 
-            img1: logopartner4,
-            img2: logopartner3,
-            img3: logopartner2,
-            img4: logopartner1,
-        },
-        {
-            img1: logopartner3,
-            img2: logopartner4,
-            img3: logopartner1,
-            img4: logopartner2,
-        }
-    ]
+    var itemq =
+        [
+            logopartner1,
+            logopartner2,
+            logopartner3,
+            logopartner4,
+            logopartner4,
+            logopartner3,
+            logopartner2,
+            logopartner1,
+        ]
+    var items = [];
+    for (let i = 0; i < itemq.length; i += 4) {
+        items.push({
+            "img1": itemq[i],
+            "img2": itemq[i + 1],
+            "img3": itemq[i + 2],
+            "img4": itemq[i + 3],
+        })
+    }
+
+    //Это мои попытки (закомментированные), но ничего пока ен получилось
+
+    // function countLogo(quantity) {
+    //     for (let i = 0; i < itemq.length; i += quantity) {
+    //         for (let a = 1; a <= quantity; a += 1) {
+    //             items.push({
+    //                 a: itemq[i + (a - 1)],
+    //             })
+    //         }
+    //     }
+    // }
+    // countLogo(4);
+    // console.log(items);
+
+    // window.onresize = function (e) {
+    //     if (e.target.outerWidth >= 1075) {
+    //         for (let i = 0; i < itemq.length; i += 4) {
+    //             items.push({
+    //                 "img1": itemq[i],
+    //                 "img2": itemq[i + 1],
+    //                 "img3": itemq[i + 2],
+    //                 "img4": itemq[i + 3],
+    //             })
+    //         }
+    //     } else {
+    //         for (let i = 0; i < itemq.length; i += 2) {
+    //             items.push({
+    //                 "img1": itemq[i],
+    //                 "img2": itemq[i + 1],
+    //             })
+    //         }
+    //     }
+    // }
+
 
     return (
         <Carousel
@@ -35,7 +70,7 @@ function CarouselLogosPartners() {
                 style: {
                     color: '#E0E0E0',
                     width: '1.3vw',
-                    padding: '0.24vw'
+                    padding: '8px'
                 }
             }}
             activeIndicatorIconButtonProps={{
@@ -52,6 +87,8 @@ function CarouselLogosPartners() {
         >
             {
                 items.map((item, i) => <LogosPartners key={i} item={item} />)
+
+
             }
         </Carousel>
     )
