@@ -28,7 +28,6 @@ function CarouselLogosPartners() {
             "img4": itemq[i + 3],
         })
     }
-
     //Это мои попытки (закомментированные), но ничего пока ен получилось
 
     // function countLogo(quantity) {

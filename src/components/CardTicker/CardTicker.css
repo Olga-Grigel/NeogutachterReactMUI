@@ -2,6 +2,18 @@
     width: 2.86vw;
 }
 
+@media screen and (max-width: 390px) {
+    .doublequote {
+        width: 10.62vw;
+    }
+}
+
 .starsmini {
     width: 7.43vw;
+}
+
+@media screen and (max-width: 390px) {
+    .starsmini {
+        width: 28.32vw;
+    }
 }

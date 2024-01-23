@@ -1,6 +1,6 @@
 import CardCompany from '../CardCompany/CardCompany';
 import Box from '@mui/material/Box';
-import MarqueeCard from '../MarqueeCard/MarqueeCard'
+import MarqueeCard from '../Marquee/Marquee'
 
 function Reviews() {
     return (

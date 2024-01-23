@@ -17,7 +17,7 @@ const theme = createTheme({
       mobileL: 750,
       mobileM: 600,
       mobileS: 450,
-      mobileMS: 386,
+      mobileMS: 391,
       mobileXS: 0
     },
   },

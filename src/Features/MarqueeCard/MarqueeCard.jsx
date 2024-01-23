@@ -9,7 +9,10 @@ function MarqueeCard({ delay }) {
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
-                mb: '1.94vw'
+                mb: {
+                    mobileMS: '1.94vw',
+                    mobileXS: '4.8vw',
+                },
             }}>
                 <CardTicker />
                 <CardTicker />

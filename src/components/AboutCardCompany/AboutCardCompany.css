@@ -1,0 +1,32 @@
+.stars {
+    width: 11.65vw;
+    margin: 12px 0 7px 0;
+}
+
+@media screen and (max-width: 390px) {
+    .stars {
+        width: 25vw;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+}
+
+.star {
+    width: 1.81vw;
+    margin-right: 0.47vw;
+    vertical-align: baseline;
+    height: 3.36vw
+}
+
+@media screen and (max-width: 390px) {
+    .star {
+        width: 6.93vw;
+        height: 6.557vw;
+        margin-top: 3vw;
+        margin-right: 1.4vw;
+    }
+}
+
+.boldfont {
+    font-weight: 700;
+}
