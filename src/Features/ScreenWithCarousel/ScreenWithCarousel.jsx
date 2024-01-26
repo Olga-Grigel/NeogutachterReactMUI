@@ -12,7 +12,7 @@ function ScreenWithCarousel() {
                     mobileM: '6.9vw 0 6.3vw',
                     mobileXS: '15vw 0 8vw',
                 },
-                backgroundColor: '#FCFCFC'
+                backgroundColor: '#FCFCFC',
             }}
         >
             <Typography
