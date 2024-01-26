@@ -64,7 +64,8 @@ function CardTicker() {
             </Typography>
             <Typography
                 sx={{
-                    letterSpacing: '0.03vw',
+                    textWrap: 'wrap',
+                    letterSpacing: 'normal',
                     fontFamily: 'Inter',
                     fontStyle: 'normal',
                     fontWeight: '400',

@@ -1,3 +1,21 @@
 .logopartner {
     width: 20.83vw;
 }
+
+@media screen and (max-width: 1074px) {
+    .logopartner {
+        width: 30.83vw;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .logopartner {
+        width: 60.64vw;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .logopartner {
+        width: 77vw;
+    }
+}

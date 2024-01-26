@@ -36,7 +36,7 @@ function AboutCardCompany() {
                 fontStyle: 'normal',
                 fontWeight: '400',
                 letterSpacing: {
-                    mobileMS: 'normal',
+                    mobileMS: '-0.009vw',
                     mobileXS: '-0.3px'
                 },
                 lineHeight: {

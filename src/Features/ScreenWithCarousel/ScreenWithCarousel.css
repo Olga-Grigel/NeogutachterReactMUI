@@ -1,0 +1,28 @@
+.carousel__highlighting {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.carousel__highlighting:after {
+  content: attr(title);
+  position: absolute;
+  z-index: -1;
+  color: #393939;
+  top: -0.3vw;
+  left: -0.4vw;
+  width: calc(100% + 0.9vw);
+  height: calc(100% + 0.7vw);
+  background-color: rgba(219, 255, 0);
+  margin-right: 0.5vw;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 391px) {
+  .carousel__highlighting:after {
+    width: calc(100% + 0.9vw);
+    height: calc(100% - 1vw);
+    top: -2.5vw;
+    left: -1vw;
+  }
+}

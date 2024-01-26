@@ -9,9 +9,9 @@ function LogosPartners(props) {
                 display: 'grid',
                 gridTemplateColumns: {
                     sm: 'repeat(4, 20.83vw)',
-                    xs: 'repeat(3, 20.83vw)',
-                    mobileM: 'repeat(2, 20.83vw)',
-                    mobileXS: 'repeat(1, 20.83vw)',
+                    xs: 'repeat(3, 30.83vw)',
+                    mobileM: 'repeat(2, 30.83vw)',
+                    mobileXS: 'repeat(1, 60.64vw)',
                 },
                 gap: '1.94vw',
                 justifyItems: 'center',

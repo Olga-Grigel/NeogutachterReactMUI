@@ -4,9 +4,11 @@ import logopartner2 from '../../images/logopartner2.svg'
 import logopartner3 from '../../images/logopartner3.svg'
 import logopartner4 from '../../images/logopartner4.svg'
 import LogosPartners from '../LogosPartners/LogosPartners'
+import { useState } from 'react'
 
 
 function CarouselLogosPartners() {
+    const [logos, setLogos] = useState([])
 
     var itemq =
         [
@@ -18,50 +20,60 @@ function CarouselLogosPartners() {
             logopartner3,
             logopartner2,
             logopartner1,
+            logopartner2,
+            logopartner1,
+            logopartner4,
+            logopartner3,
         ]
-    var items = [];
-    for (let i = 0; i < itemq.length; i += 4) {
-        items.push({
-            "img1": itemq[i],
-            "img2": itemq[i + 1],
-            "img3": itemq[i + 2],
-            "img4": itemq[i + 3],
-        })
+
+    function split4(items) {
+        for (let i = 0; i < itemq.length; i += 4) {
+            items.push({
+                "img1": itemq[i],
+                "img2": itemq[i + 1],
+                "img3": itemq[i + 2],
+                "img4": itemq[i + 3]
+            })
+        }
     }
-    //Это мои попытки (закомментированные), но ничего пока ен получилось
 
-    // function countLogo(quantity) {
-    //     for (let i = 0; i < itemq.length; i += quantity) {
-    //         for (let a = 1; a <= quantity; a += 1) {
-    //             items.push({
-    //                 a: itemq[i + (a - 1)],
-    //             })
-    //         }
-    //     }
-    // }
-    // countLogo(4);
-    // console.log(items);
+    function split3(items) {
+        for (let i = 0; i < itemq.length; i += 3) {
+            items.push({
+                "img1": itemq[i],
+                "img2": itemq[i + 1],
+                "img3": itemq[i + 2]
+            })
+        }
+    }
+    function split2(items) {
+        for (let i = 0; i < itemq.length; i += 2) {
+            items.push({
+                "img1": itemq[i],
+                "img2": itemq[i + 1]
+            })
+        }
+    }
+    function split1(items) {
+        for (let i = 0; i < itemq.length; i += 1) {
+            items.push({
+                "img1": itemq[i]
+            })
+        }
+    }
 
-    // window.onresize = function (e) {
-    //     if (e.target.outerWidth >= 1075) {
-    //         for (let i = 0; i < itemq.length; i += 4) {
-    //             items.push({
-    //                 "img1": itemq[i],
-    //                 "img2": itemq[i + 1],
-    //                 "img3": itemq[i + 2],
-    //                 "img4": itemq[i + 3],
-    //             })
-    //         }
-    //     } else {
-    //         for (let i = 0; i < itemq.length; i += 2) {
-    //             items.push({
-    //                 "img1": itemq[i],
-    //                 "img2": itemq[i + 1],
-    //             })
-    //         }
-    //     }
-    // }
-
+    window.onresize = function (e) {
+        let items = []
+        if (e.target.innerWidth >= 1075) { split4(items) }
+        else {
+            if (e.target.innerWidth >= 950) { split3(items) }
+            else {
+                if (e.target.innerWidth >= 600) { split2(items) }
+                else { split1(items) }
+            }
+        }
+        setLogos(items)
+    }
 
     return (
         <Carousel
@@ -79,15 +91,12 @@ function CarouselLogosPartners() {
             }}
             indicatorContainerProps={{
                 style: {
-                    marginTop: '2.9vw',
+                    marginTop: '2.55vw',
                 }
-
             }}
         >
             {
-                items.map((item, i) => <LogosPartners key={i} item={item} />)
-
-
+                logos.map((item, i) => <LogosPartners key={i} item={item} />)
             }
         </Carousel>
     )
