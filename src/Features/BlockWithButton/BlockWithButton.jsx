@@ -75,7 +75,7 @@ function BlockWithButton() {
           position: 'relative'
         }}
       >
-        <ButtonWithArrow />
+        <ButtonWithArrow textButton={'Gutachter kostenlos anfragen'} />
         <Box sx={{
           position: 'absolute',
           backgroundImage: {

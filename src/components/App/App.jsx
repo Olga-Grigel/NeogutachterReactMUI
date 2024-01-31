@@ -3,7 +3,8 @@ import ScreenWithHeader from '../../Features/ScreenWithHeader/ScreenWithHeader.j
 import ScreenWithReviews from '../../Features/ScreenWithReviews/ScreenWithReviews.jsx';
 import ScreenWithReviewsMobile from '../../Features/ScreenWithReviewsMobile/ScreenWithReviewsMobile.jsx';
 import ScreenWithCarousel from '../../Features/ScreenWithCarousel/ScreenWithCarousel.jsx';
-import ScreenWithPhone from '../../Features/ScreenWithPhone/ScreenWithPhone.jsx'
+import ScreenWithPhone from '../../Features/ScreenWithPhone/ScreenWithPhone.jsx';
+import ScreenBecomePartner from '../../Features/ScreenBecomePartner/ScreenBecomePartner.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ScreenWithReviewsMobile />
       <ScreenWithCarousel />
       <ScreenWithPhone />
+      <ScreenBecomePartner />
     </div>
 
   );

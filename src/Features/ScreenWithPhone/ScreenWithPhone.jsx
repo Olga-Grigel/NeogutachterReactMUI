@@ -13,7 +13,7 @@ function ScreenWithPhone() {
                 },
                 pb: {
                     mobileMS: '103px',
-                    mobileXS: '116px'
+                    mobileXS: '70px'
                 },
                 width: {
                     sm: '50%',

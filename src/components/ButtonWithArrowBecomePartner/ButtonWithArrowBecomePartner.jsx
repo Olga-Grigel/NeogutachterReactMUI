@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ArrowButton from "../../images/ArrowButtonHeader.svg";
 
-function ButtonWithArrow({ textButton }) {
+function ButtonWithArrowBecomePartner({ textButton }) {
     return (
         <Button
             sx={{
@@ -13,15 +13,7 @@ function ButtonWithArrow({ textButton }) {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                padding: {
-                    mobileL: '16px 20px 16px 24px',
-                    mobileXS: '12px 20px 12px 24px'
-                },
-                marginTop: {
-                    mobileL: '27px',
-                    mobileXS: '26px'
-                },
-                ml: '-8px',
+                padding: '16px 20px 16px 24px',
                 border: 'none',
                 textTransform: 'none',
             }}
@@ -30,18 +22,10 @@ function ButtonWithArrow({ textButton }) {
                 letterSpacing: 'normal',
                 margin: 0,
                 fontFamily: 'Inter',
-                fontSize: {
-                    lg: '18px',
-                    mobileL: '12px',
-                    mobileMS: '16px',
-                    mobileXS: '12px'
-                },
+                fontSize: '18px',
                 fontStyle: 'normal',
                 fontWeight: '700',
-                lineHeight: {
-                    mobileL: '30px',
-                    mobileXS: '28px'
-                },
+                lineHeight: '30px',
                 marginRight: '8px',
                 display: 'inline-block',
             }}>
@@ -51,16 +35,8 @@ function ButtonWithArrow({ textButton }) {
                 sx={{
                     backgroundImage: `URL(${ArrowButton})`,
                     color: 'white',
-                    width: {
-                        lg: '32px',
-                        mobileL: '28px',
-                        mobileXS: '24px'
-                    },
-                    height: {
-                        lg: '32px',
-                        mobileL: '28px',
-                        mobileXS: '24px'
-                    },
+                    width: '32px',
+                    height: '32px',
                     display: 'inline-block',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'contain',
@@ -71,4 +47,4 @@ function ButtonWithArrow({ textButton }) {
     );
 }
 
-export default ButtonWithArrow;
+export default ButtonWithArrowBecomePartner;
