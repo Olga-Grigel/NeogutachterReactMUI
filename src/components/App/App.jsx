@@ -10,12 +10,12 @@ import ScreenWithFAQ from '../../Features/ScreenWithFAQ/ScreenWithFAQ.jsx'
 function App() {
   return (
     <div>
-      {/* <ScreenWithHeader />
+      <ScreenWithHeader />
       <ScreenWithReviews />
       <ScreenWithReviewsMobile />
       <ScreenWithCarousel />
       <ScreenWithPhone />
-      <ScreenBecomePartner /> */}
+      <ScreenBecomePartner />
       <ScreenWithFAQ />
     </div>
 
