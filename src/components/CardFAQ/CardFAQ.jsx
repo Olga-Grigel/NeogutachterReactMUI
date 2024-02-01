@@ -1,11 +1,13 @@
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import ArrowFAQ from '../../images/ArrowFAQ.svg'
+import ArrowFAQ from '../../images/ArrowFAQ.svg';
+import Link from '@mui/material/Link';
 
 function CardFAQ({ text }) {
     return (
-        <Box sx={{
+        <Link href="#" sx={{
             p: '14px 28px',
+            textDecoration: 'none',
             boxSizing: 'border-box',
             width: '100%',
             display: 'flex',
@@ -41,7 +43,7 @@ function CardFAQ({ text }) {
                     ml: '28px',
                 }}>
             </Box>
-        </Box>
+        </Link>
     );
 }
 
