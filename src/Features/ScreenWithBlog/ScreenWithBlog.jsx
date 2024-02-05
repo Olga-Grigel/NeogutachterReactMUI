@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import CardArticle from '../../components/CardArticle/CardArticle';
 import { Typography } from '@mui/material';
+import Carousel from 'react-material-ui-carousel';
 
 function ScreenWithBlog() {
     var articles =
@@ -54,7 +55,31 @@ function ScreenWithBlog() {
             }}>
                 Artikel zum Thema Gutachter
             </Typography>
-
+            <Box>
+                <Carousel
+                    indicatorIconButtonProps={{
+                        style: {
+                            color: '#E0E0E0',
+                            width: '1.3vw',
+                            padding: '8px'
+                        }
+                    }}
+                    activeIndicatorIconButtonProps={{
+                        style: {
+                            color: '#545454'
+                        }
+                    }}
+                    indicatorContainerProps={{
+                        style: {
+                            marginTop: '2.55vw',
+                        }
+                    }}
+                >
+                    {
+                        articles.map((article, i) => <CardArticle key={i} text={article} />)
+                    }
+                </Carousel>
+            </Box>
             <Box sx={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(2, 38.89vw)',
