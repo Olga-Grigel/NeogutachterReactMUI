@@ -3,16 +3,20 @@ import Box from '@mui/material/Box';
 import ArrowBlog from '../../images/ArrowBlog.svg';
 import Link from '@mui/material/Link';
 
-function CardArticle({ text }) {
+function CardArticle({ text, className }) {
     return (
-        <Box href="#" sx={{
+
+        <Box className={className} sx={{
             p: '28px',
             backgroundColor: '#EFEFEF',
             borderRadius: '28px',
         }}>
             <Typography
                 sx={{
-                    letterSpacing: 'normal',
+                    letterSpacing: {
+                        mobileMS: 'normal',
+                        mobileXS: '-0.5px',
+                    },
                     textWrap: 'wrap',
                     color: '#545454',
                     fontFamily: "Lexend Deca",
@@ -24,20 +28,20 @@ function CardArticle({ text }) {
                     fontWeight: '700',
                     lineHeight: {
                         mobileMS: '36px',
-                        mobileXS: '8.49vw',
+                        mobileXS: '8.3vw',
                     },
-                    mb: '82px',
+                    mb: {
+                        mobileMS: '82px',
+                        mobileXS: '63px',
+                    },
                 }}>
                 {text}
             </Typography>
-
-
             <Box
                 sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
                 }}>
-
                 <Button sx={{
                     backgroundColor: '#DBFF00',
                     borderRadius: '16px',
@@ -77,6 +81,7 @@ function CardArticle({ text }) {
                 </Link>
             </Box>
         </Box>
+
     );
 }
 

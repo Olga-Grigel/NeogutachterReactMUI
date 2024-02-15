@@ -1,0 +1,35 @@
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.all-pages-container {
+    height: 100%;
+    display: flex;
+}
+
+.dimensions {
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.button-blog {
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border: none;
+}
+
+.button-blog:hover {
+    background-color: #EFEFEF
+}

@@ -1,20 +1,15 @@
 import Box from '@mui/material/Box';
 import CardArticle from '../../components/CardArticle/CardArticle';
 import { Typography } from '@mui/material';
-import Carousel from 'react-material-ui-carousel';
+import CarouselBlog from '../../components/CarouselBlog/CarouselBlog';
+import './ScreenWithBlog.css';
+import articles from '../../utils/constants'
 
 function ScreenWithBlog() {
-    var articles =
-        [
-            { title: 'Prämienzuschlag Kfz-Versicherung – Wichtige Infos zum Thema!' },
-            { title: 'Prämienzuschlag Kfz-Versicherung – Wichtige Infos zum Thema!' },
-            { title: 'Prämienzuschlag Kfz-Versicherung – Wichtige Infos zum Thema!' },
-            { title: 'Prämienzuschlag Kfz-Versicherung – Wichtige Infos zum Thema!' },
-        ]
+
     function renderCardArticle() {
-        articles.forEach((article, index) => {
+        articles.forEach((article) => {
             <CardArticle text={article.title} />;
-            console.log(<CardArticle text={article.title} />)
         });
 
     }
@@ -33,7 +28,10 @@ function ScreenWithBlog() {
             }}
         >
             <Typography sx={{
-                letterSpacing: 'normal',
+                letterSpacing: {
+                    mobileL: 'normal',
+                    mobileXS: '-0.48px'
+                },
                 textWrap: 'wrap',
                 color: '#393939',
                 fontFamily: "Lexend Deca",
@@ -55,33 +53,22 @@ function ScreenWithBlog() {
             }}>
                 Artikel zum Thema Gutachter
             </Typography>
-            <Box>
-                <Carousel
-                    indicatorIconButtonProps={{
-                        style: {
-                            color: '#E0E0E0',
-                            width: '1.3vw',
-                            padding: '8px'
-                        }
-                    }}
-                    activeIndicatorIconButtonProps={{
-                        style: {
-                            color: '#545454'
-                        }
-                    }}
-                    indicatorContainerProps={{
-                        style: {
-                            marginTop: '2.55vw',
-                        }
-                    }}
-                >
-                    {
-                        articles.map((article, i) => <CardArticle key={i} text={article} />)
-                    }
-                </Carousel>
+            <Box sx={{
+                height: '100%',
+                position: 'relative',
+                width: '100%',
+                display: {
+                    mobileL: 'none',
+                    mobileXS: 'block'
+                },
+            }}>
+                <CarouselBlog />
             </Box>
             <Box sx={{
-                display: 'grid',
+                display: {
+                    mobileL: 'grid',
+                    mobileXS: 'none'
+                },
                 gridTemplateColumns: 'repeat(2, 38.89vw)',
                 gap: '1.94vw',
                 justifyItems: 'center',
