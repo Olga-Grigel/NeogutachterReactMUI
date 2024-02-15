@@ -57,8 +57,8 @@ function BlockWithButton() {
               md: '40px',
               sm: '35px',
               mobileL: '25px',
-              mobileMS: '31px',
-              mobileXS: '24px',
+              mobileMS: '30px',
+              mobileXS: '31px',
             },
             lineHeight: {
               sm: '68px',
@@ -75,7 +75,7 @@ function BlockWithButton() {
           position: 'relative'
         }}
       >
-        <ButtonWithArrow textButton={'Gutachter kostenlos anfragen'} />
+        <ButtonWithArrow textButton={'Gutachter kostenlos anfragen'} fontSize={'16px'} />
         <Box sx={{
           position: 'absolute',
           backgroundImage: {
@@ -102,7 +102,7 @@ function BlockWithButton() {
             sm: '278px',
             mobileL: '240px',
             mobileMS: '300px',
-            mobileXS: '230px'
+            mobileXS: '300px'
           },
         }}>
         </Box>

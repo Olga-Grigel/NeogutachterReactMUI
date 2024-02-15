@@ -11,13 +11,13 @@ import ScreenWithBlog from '../../Features/ScreenWithBlog/ScreenWithBlog.jsx'
 function App() {
   return (
     <div>
-      {/* <ScreenWithHeader />
+      <ScreenWithHeader />
       <ScreenWithReviews />
       <ScreenWithReviewsMobile />
       <ScreenWithCarousel />
       <ScreenWithPhone />
       <ScreenBecomePartner />
-      <ScreenWithFAQ /> */}
+      <ScreenWithFAQ />
       <ScreenWithBlog />
     </div>
 

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ArrowButton from "../../images/ArrowButtonHeader.svg";
 
-function ButtonWithArrow({ textButton }) {
+function ButtonWithArrow({ textButton, fontSize }) {
     return (
         <Button
             sx={{
@@ -34,7 +34,7 @@ function ButtonWithArrow({ textButton }) {
                     lg: '18px',
                     mobileL: '12px',
                     mobileMS: '16px',
-                    mobileXS: '12px'
+                    mobileXS: `${fontSize}`
                 },
                 fontStyle: 'normal',
                 fontWeight: '700',

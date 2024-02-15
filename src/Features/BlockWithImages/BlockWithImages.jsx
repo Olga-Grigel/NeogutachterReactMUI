@@ -60,8 +60,7 @@ function BlockWithImages() {
               mobileL: 'calc(202px * 0.6)',
               mobileM: 'calc(202px * 0.7)',
               mobileS: 'calc(202px * 0.6)',
-              mobileMS: '106px',
-              mobileXS: 'calc(106px * 0.8)',
+              mobileXS: '106px',
             },
             height: {
               lg: '349px',
@@ -70,8 +69,7 @@ function BlockWithImages() {
               mobileL: 'calc(349px * 0.6)',
               mobileM: 'calc(349px * 0.7)',
               mobileS: 'calc(349px * 0.6)',
-              mobileMS: '182px',
-              mobileXS: 'calc(182px * 0.8)',
+              mobileXS: '182px',
             },
             top: {
               lg: '5px',
@@ -84,6 +82,7 @@ function BlockWithImages() {
               md: '370px',
               xs: '320px',
               mobileL: '270px',
+              mobileXS: '207px',
             },
             zIndex: '3'
           }}
@@ -100,8 +99,7 @@ function BlockWithImages() {
               mobileL: 'calc(248px * 0.6)',
               mobileM: 'calc(248px * 0.7)',
               mobileS: 'calc(248px * 0.6)',
-              mobileMS: '129px',
-              mobileXS: 'calc(129px * 0.8)',
+              mobileXS: '129px',
             },
             height: {
               lg: '428px',
@@ -110,15 +108,14 @@ function BlockWithImages() {
               mobileL: 'calc(428px * 0.6)',
               mobileM: 'calc(428px * 0.7)',
               mobileS: 'calc(428px * 0.6)',
-              mobileMS: '223px',
-              mobileXS: 'calc(223px * 0.8)',
+              mobileXS: '223px',
             },
             top: {
               lg: '155px',
               md: '140px',
               mobileL: '120px',
               mobileMS: '77px',
-              mobileXS: '60px'
+              mobileXS: '76px'
             },
             right: {
               lg: '230px',
@@ -145,8 +142,7 @@ function BlockWithImages() {
               mobileL: 'calc(215px * 0.6)',
               mobileM: 'calc(215px * 0.7)',
               mobileS: 'calc(215px * 0.6)',
-              mobileMS: '112px',
-              mobileXS: 'calc(112px * 0.8)',
+              mobileXS: '112px',
             },
             height: {
               lg: '329px',
@@ -155,8 +151,7 @@ function BlockWithImages() {
               mobileL: 'calc(329px * 0.6)',
               mobileM: 'calc(329px * 0.7)',
               mobileS: 'calc(329px * 0.6)',
-              mobileMS: '172px',
-              mobileXS: 'calc(172px * 0.8)',
+              mobileXS: '172px',
             },
             top: {
               mobileL: '70px',
@@ -164,7 +159,7 @@ function BlockWithImages() {
             },
             right: {
               mobileS: '25px',
-              mobileXS: '-5px',
+              mobileXS: '-25px',
             },
             zIndex: '2'
           }}
