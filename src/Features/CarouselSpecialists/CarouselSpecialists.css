@@ -1,0 +1,36 @@
+.specialist-main-container {
+    height: 408px;
+    width: 100%;
+}
+
+.specialist-window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.specialist-all-pages-container {
+    height: 100%;
+    display: inline-flex;
+    gap: 28px;
+}
+
+.specialist-dimensions {
+    height: 100%;
+    min-width: 266px;
+    max-width: 266px;
+    box-sizing: border-box;
+}
+
+.specialist-button {
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    height: 40px;
+    min-width: 40px;
+    padding: 0;
+    border: none;
+}
+
+.specialist-button:hover {
+    background-color: #EFEFEF
+}

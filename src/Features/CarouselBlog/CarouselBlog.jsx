@@ -5,7 +5,7 @@ import './CarouselBlog.css';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
 import { useRef } from 'react';
-import articles from '../../utils/constants'
+import { articles } from '../../utils/constants'
 
 
 function CarouselBlog() {

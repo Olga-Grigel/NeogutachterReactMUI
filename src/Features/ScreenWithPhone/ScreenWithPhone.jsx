@@ -80,6 +80,9 @@ function ScreenWithPhone() {
                 fontWeight: '700',
                 lineHeight: '30px',
                 gap: '8px',
+                ':hover': {
+                    bgcolor: '#393939',
+                },
             }}>
                 <img src={PhoneButton} className="phoneButton" alt='phoneButton' />
                 0160/4873888

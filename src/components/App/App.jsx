@@ -6,7 +6,8 @@ import ScreenWithCarousel from '../../Features/ScreenWithCarousel/ScreenWithCaro
 import ScreenWithPhone from '../../Features/ScreenWithPhone/ScreenWithPhone.jsx';
 import ScreenBecomePartner from '../../Features/ScreenBecomePartner/ScreenBecomePartner.jsx';
 import ScreenWithFAQ from '../../Features/ScreenWithFAQ/ScreenWithFAQ.jsx';
-import ScreenWithBlog from '../../Features/ScreenWithBlog/ScreenWithBlog.jsx'
+import ScreenWithBlog from '../../Features/ScreenWithBlog/ScreenWithBlog.jsx';
+import ScreenWithSelectionOfSpecialists from '../../Features/ScreenWithSelectionOfSpecialists/ScreenWithSelectionOfSpecialists.jsx'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ScreenWithReviews />
       <ScreenWithReviewsMobile />
       <ScreenWithCarousel />
+      <ScreenWithSelectionOfSpecialists />
       <ScreenWithPhone />
       <ScreenBecomePartner />
       <ScreenWithFAQ />

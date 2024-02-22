@@ -1,9 +1,9 @@
 import Box from '@mui/material/Box';
 import CardArticle from '../../components/CardArticle/CardArticle';
 import { Typography } from '@mui/material';
-import CarouselBlog from '../../components/CarouselBlog/CarouselBlog';
+import CarouselBlog from '../../Features/CarouselBlog/CarouselBlog';
 import './ScreenWithBlog.css';
-import articles from '../../utils/constants'
+import { articles } from '../../utils/constants'
 
 function ScreenWithBlog() {
 
@@ -79,9 +79,7 @@ function ScreenWithBlog() {
             } >
 
                 {
-                    articles.map((article) => (
-                        <CardArticle text={article.title} />
-                    ))
+                    articles.map((article, personIndex) => { return (<CardArticle key={personIndex} text={article.title} />) })
                 }
 
             </Box>

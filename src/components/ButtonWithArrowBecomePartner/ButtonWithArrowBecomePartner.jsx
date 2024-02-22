@@ -16,6 +16,9 @@ function ButtonWithArrowBecomePartner({ textButton }) {
                 padding: '16px 20px 16px 24px',
                 border: 'none',
                 textTransform: 'none',
+                ':hover': {
+                    bgcolor: '#393939',
+                },
             }}
         ><Typography
             sx={{
