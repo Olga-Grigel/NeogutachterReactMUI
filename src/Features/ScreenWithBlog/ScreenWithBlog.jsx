@@ -22,7 +22,7 @@ function ScreenWithBlog() {
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 p: {
-                    mobileMS: '2.85vw 10.14vw 5vw',
+                    mobileMS: '2.85vw 10.14vw 111px',
                     mobileXS: '15.93vw 5.71vw 15.93vw'
                 }
             }}

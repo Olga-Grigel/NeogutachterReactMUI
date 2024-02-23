@@ -7,7 +7,8 @@ import ScreenWithPhone from '../../Features/ScreenWithPhone/ScreenWithPhone.jsx'
 import ScreenBecomePartner from '../../Features/ScreenBecomePartner/ScreenBecomePartner.jsx';
 import ScreenWithFAQ from '../../Features/ScreenWithFAQ/ScreenWithFAQ.jsx';
 import ScreenWithBlog from '../../Features/ScreenWithBlog/ScreenWithBlog.jsx';
-import ScreenWithSelectionOfSpecialists from '../../Features/ScreenWithSelectionOfSpecialists/ScreenWithSelectionOfSpecialists.jsx'
+import ScreenWithSelectionOfSpecialists from '../../Features/ScreenWithSelectionOfSpecialists/ScreenWithSelectionOfSpecialists.jsx';
+import ScreenWithFooter from '../../Features/ScreenWithFooter/ScreenWithFooter.jsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ScreenBecomePartner />
       <ScreenWithFAQ />
       <ScreenWithBlog />
+      <ScreenWithFooter />
     </div>
 
   );

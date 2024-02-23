@@ -1,0 +1,14 @@
+.footer__iconbutton {
+    height: 32px;
+    width: 32px;
+}
+
+.footer__logo {
+    width: 226px;
+}
+
+@media screen and (max-width: 750px) {
+    .footer__logo {
+        margin-bottom: 24px;
+    }
+}
