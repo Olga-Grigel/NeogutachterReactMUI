@@ -57,7 +57,6 @@ function BlockWithButton() {
               md: '40px',
               sm: '35px',
               mobileL: '25px',
-              mobileMS: '30px',
               mobileXS: '31px',
             },
             lineHeight: {

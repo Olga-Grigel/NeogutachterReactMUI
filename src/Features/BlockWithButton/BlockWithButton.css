@@ -24,7 +24,7 @@
   line-height: 40px;
 }
 
-@media screen and (min-width: 386px) {
+@media screen and (min-width: 0px) {
   .homepage__highlighting {
     font-size: 31px;
   }

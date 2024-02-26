@@ -4,7 +4,7 @@ import BlockWithImages from '../BlockWithImages/BlockWithImages.jsx'
 import Box from '@mui/material/Box';
 import background from "../../images/HomeBackgroundImage.png";
 
-function FirstScreen() {
+function ScreenWithHeader() {
   return (
     <Box
       sx={{
@@ -40,4 +40,4 @@ function FirstScreen() {
   );
 }
 
-export default FirstScreen;
+export default ScreenWithHeader;
