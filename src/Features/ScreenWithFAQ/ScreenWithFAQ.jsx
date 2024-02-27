@@ -1,8 +1,14 @@
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import CardFAQ from '../../components/CardFAQ/CardFAQ'
+import CardFAQ from '../../components/CardFAQ/CardFAQ';
+import { textFAQ } from '../../utils/constants';
+import AnswersFAQ from '../../components/AnswersFAQ/AnswersFAQ';
+import { useState } from 'react';
 
 function ScreenWithFAQ() {
+
+
+
     return (
         <Box
             sx={{
@@ -63,13 +69,20 @@ function ScreenWithFAQ() {
                     flexDirection: 'column',
                     gap: '12px',
                 }}>
-                    <CardFAQ text={'Was macht ein Kfz-Gutachter?'} />
-                    <CardFAQ text={'Wann benötigt man einen Kfz-Gutachter?'} />
-                    <CardFAQ text={'Wer kann den Kfz-Gutachter beauftragen?'} />
-                    <CardFAQ text={'Wann sollte man einen Kfz-Gutachter hinzuziehen?'} />
-                    <CardFAQ text={'Unfallgeschädigter, wann ist man Unfallgeschädigter?'} />
-                    <CardFAQ text={'Wie vereinbart man einen Termin mit einem Kfz-Gutachter?'} />
-                    <CardFAQ text={'Wo wird das Fahrzeug besichtigt?'} />
+                    {textFAQ.map((faq, index) => {
+                        let visibility = 'none'
+                        function cliCkArrow() {
+                            console.log('клик по строчке')
+                            visibility = 'flex'
+                        }
+
+                        return (
+                            <Box>
+                                <CardFAQ key={index} text={faq.question} onClick={cliCkArrow} />
+                                <AnswersFAQ key={`1${index}`} text={faq.answer} display={visibility} />
+                            </Box>
+                        )
+                    })}
                 </Box>
 
 

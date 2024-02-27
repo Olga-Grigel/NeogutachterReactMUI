@@ -3,11 +3,10 @@ import Box from '@mui/material/Box';
 import ArrowFAQ from '../../images/ArrowFAQ.svg';
 import Link from '@mui/material/Link';
 
-function CardFAQ({ text }) {
+function CardFAQ({ text, onClick }) {
     return (
-        <Link href="#" sx={{
+        <Box onClick={onClick} sx={{
             p: '14px 28px',
-            textDecoration: 'none',
             boxSizing: 'border-box',
             width: '100%',
             display: 'flex',
@@ -32,7 +31,7 @@ function CardFAQ({ text }) {
                 }}>
                 {text}
             </Typography>
-            <Box
+            <Link onClick={onClick}
                 sx={{
                     backgroundImage: `URL(${ArrowFAQ})`,
                     width: '24px',
@@ -42,8 +41,8 @@ function CardFAQ({ text }) {
                     backgroundPosition: 'center',
                     ml: '28px',
                 }}>
-            </Box>
-        </Link>
+            </Link>
+        </Box>
     );
 }
 
