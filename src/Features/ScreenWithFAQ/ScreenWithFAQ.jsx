@@ -7,8 +7,11 @@ import { useState } from 'react';
 
 function ScreenWithFAQ() {
 
+const [visibility, setVisibility]=useState(false)
 
-
+function cliCkArrow() {
+    visibility===false ? setVisibility(true):setVisibility(false)
+}
     return (
         <Box
             sx={{
@@ -70,16 +73,10 @@ function ScreenWithFAQ() {
                     gap: '12px',
                 }}>
                     {textFAQ.map((faq, index) => {
-                        let visibility = 'none'
-                        function cliCkArrow() {
-                            console.log('клик по строчке')
-                            visibility = 'flex'
-                        }
-
-                        return (
+                     return (
                             <Box>
                                 <CardFAQ key={index} text={faq.question} onClick={cliCkArrow} />
-                                <AnswersFAQ key={`1${index}`} text={faq.answer} display={visibility} />
+                                <AnswersFAQ key={`1${index}`} isSelected={visibility} text={faq.answer}/>
                             </Box>
                         )
                     })}

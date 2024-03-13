@@ -46,7 +46,7 @@ function BlockWithButtonBecomePartner() {
             },
           }}
         >
-          <h2 className="becomePartner__highlighting">Neogutachter.de</h2> <br />
+          <span className="becomePartner__highlighting">Neogutachter.de</span> <br />
           für Gutachter</Typography>
 
         <Typography color="primary.black"

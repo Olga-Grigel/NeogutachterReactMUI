@@ -6,14 +6,21 @@ import { specialists } from '../../utils/constants';
 import { useState } from 'react';
 
 function FiltersForSpecialists({ textButton, setArraySpecialists }) {
-
+const[selected, setSelected] = useState("All")
     function arrow() {
         return (<img src={blackArrow} className='blackArrow' alt='blackArrow' />)
     }
-    function clickButtonAll() {
+    function clickButtonAll(evt) {
         setArraySpecialists(specialists)
+        setSelected("All")
     };
 
+    function clickButtonStadt(evt,stadt) {
+        const resultArray = specialists.filter((ojectAboutSpecialist) => ojectAboutSpecialist.address.includes(stadt));
+        setArraySpecialists(resultArray)
+        setSelected(stadt)
+    }
+     
     return (
         <Box
             sx={{
@@ -38,17 +45,12 @@ function FiltersForSpecialists({ textButton, setArraySpecialists }) {
                     gap: '16px'
                 }}
             >
-                <ButtonFilter textButton={'All'} onClick={clickButtonAll} />
+                <ButtonFilter textButton={'All'} isSelected={selected==="All"} onClick={(evt) => {clickButtonAll(evt)}}/>
                 {
-                    textButton.map((filter, index) => {
-
-                        function clickButtonStadt(el) {
-                            const resultArray = specialists.filter((ojectAboutSpecialist) => ojectAboutSpecialist.address.includes(filter.stadt));
-                            setArraySpecialists(resultArray)
-                            console.log(el)
-                        };
+                    textButton.map((value, index) => {
+                       
                         return (
-                            <ButtonFilter key={index} textButton={filter.stadt} onClick={() => clickButtonStadt(this)} />)
+                            <ButtonFilter key={index} isSelected={selected===value.stadt} textButton={value.stadt} onClick={(evt) => {clickButtonStadt(evt, value.stadt)}} />)
                     })
                 }
             </Box>

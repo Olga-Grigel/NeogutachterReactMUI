@@ -1,10 +1,10 @@
 import { Typography, Box } from '@mui/material';
 
-function AnswersFAQ({ text, display }) {
+function AnswersFAQ({ text, isSelected }) {
     return (
-        <Box
+        <Box className={isSelected? "selected":""}
             sx={{
-                display: { display },
+                display: 'none',
                 mt: '10px',
                 p: '14px 28px',
                 boxSizing: 'border-box',
@@ -12,6 +12,9 @@ function AnswersFAQ({ text, display }) {
                 justifyContent: 'space-between',
                 borderRadius: '16px',
                 background: '#FFF',
+                '&.selected': {
+                    display: 'flex'
+                }
             }}
         >
             <Typography

@@ -13,6 +13,9 @@ function CardFAQ({ text, onClick }) {
             justifyContent: 'space-between',
             borderRadius: '16px',
             background: '#FFF',
+            ':hover': {
+                cursor:'pointer'
+            },
         }}>
             <Typography
                 sx={{

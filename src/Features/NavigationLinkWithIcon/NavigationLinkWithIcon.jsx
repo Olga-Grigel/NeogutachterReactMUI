@@ -1,13 +1,12 @@
 import './NavigationLinkWithIcon.css'
 import * as React from 'react';
 import NavigationLink from '../../components/NavigationLink/NavigationLink'
-import Link from '@mui/material/Link';
-
+import Box from '@mui/material/Box';
 
 
 function NavigationLinkWithIcon({ text, icon }) {
   return (
-    <Link href="inherit" display={'flex'}
+    <Box display={'flex'}
       sx={{
         textDecoration: 'inherit',
         ml: "16px",
@@ -18,7 +17,7 @@ function NavigationLinkWithIcon({ text, icon }) {
     >
       <img className="navigation__icon_before_text" src={icon} alt="icon" />
       <NavigationLink text={text} />
-    </Link>
+    </Box>
   );
 }
 export default NavigationLinkWithIcon;
