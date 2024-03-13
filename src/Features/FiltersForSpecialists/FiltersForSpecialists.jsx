@@ -6,7 +6,9 @@ import { specialists } from '../../utils/constants';
 import { useState } from 'react';
 
 function FiltersForSpecialists({ textButton, setArraySpecialists }) {
+    
 const[selected, setSelected] = useState("All")
+
     function arrow() {
         return (<img src={blackArrow} className='blackArrow' alt='blackArrow' />)
     }

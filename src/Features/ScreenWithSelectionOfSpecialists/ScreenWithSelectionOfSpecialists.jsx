@@ -61,7 +61,7 @@ function ScreenWithSelectionOfSpecialists() {
                 sx={{
 
                 }}>
-                <FiltersForSpecialists textButton={filterSpecialists} arraySpecialists={arraySpecialists} setArraySpecialists={setArraySpecialists} />
+                <FiltersForSpecialists textButton={filterSpecialists} setArraySpecialists={setArraySpecialists} />
             </Box>
 
             <Box sx={{

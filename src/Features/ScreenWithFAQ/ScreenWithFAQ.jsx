@@ -7,10 +7,10 @@ import { useState } from 'react';
 
 function ScreenWithFAQ() {
 
-const [visibility, setVisibility]=useState(false)
+const[selected, setSelected] = useState("")
 
-function cliCkArrow() {
-    visibility===false ? setVisibility(true):setVisibility(false)
+function cliсkArrow(evt, question) {
+    selected===""?setSelected(question):setSelected("")
 }
     return (
         <Box
@@ -64,7 +64,7 @@ function cliCkArrow() {
                         },
                         mb: '40px'
                     }}>
-                    Neogutachter.de FAQ – frequently asked questions
+                    Neogutachter.de FAQ - frequently asked questions
                 </Typography>
                 <Box sx={{
                     width: '100%',
@@ -75,8 +75,8 @@ function cliCkArrow() {
                     {textFAQ.map((faq, index) => {
                      return (
                             <Box key={index}>
-                                <CardFAQ text={faq.question} onClick={cliCkArrow} />
-                                <AnswersFAQ isSelected={visibility} text={faq.answer}/>
+                                <CardFAQ text={faq.question} onClick={(evt)=> {cliсkArrow(evt, faq.question)}} />
+                                <AnswersFAQ isSelected={selected===faq.question} text={faq.answer}/>
                             </Box>
                         )
                     })}
