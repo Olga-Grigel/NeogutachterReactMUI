@@ -74,9 +74,9 @@ function cliCkArrow() {
                 }}>
                     {textFAQ.map((faq, index) => {
                      return (
-                            <Box>
-                                <CardFAQ key={index} text={faq.question} onClick={cliCkArrow} />
-                                <AnswersFAQ key={`1${index}`} isSelected={visibility} text={faq.answer}/>
+                            <Box key={index}>
+                                <CardFAQ text={faq.question} onClick={cliCkArrow} />
+                                <AnswersFAQ isSelected={visibility} text={faq.answer}/>
                             </Box>
                         )
                     })}
