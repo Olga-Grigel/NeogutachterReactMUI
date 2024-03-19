@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box"
-import mappin from "../../images/Mappin.svg"
+import mappin from "../../images/Mappin.png"
 
 function Mappin() {
   return (
